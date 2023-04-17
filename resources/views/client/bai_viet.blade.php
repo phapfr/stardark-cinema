@@ -7,7 +7,7 @@
             <div class="row align-items-end mb-60">
                 <div class="col-md-12">
                     <div class="section-title text-center">
-                        <h2 class="title">Bài Viết Dở Nhất do Võ Trần Hải Hậu viết</h2>
+                        <h2 class="title">Bài Viết Mới Nhất</h2>
                         <div style="border: 2px solid black; margin-top: 10px"></div>
                     </div>
                 </div>
