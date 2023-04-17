@@ -21,7 +21,7 @@ class AdminController extends Controller
         $check = Auth::guard('admin')->attempt($data);
         if($check) {
             toastr()->success("Đã đăng nhập thành công!");
-            return redirect('/admin/tai-khoan/index');
+            return redirect('/admin/phim/index-vue');
         } else {
             toastr()->error("Tài khoản hoặc mật khẩu không đúng!");
             return redirect('/admin/login');

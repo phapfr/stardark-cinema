@@ -2,7 +2,7 @@
 @section('noi_dung')
 <div id="app" class="row">
     <div class="col-md-4">
-        <div class="card border-danger border-bottom border-3 border-0">
+        <div class="card border-bottom border-3 border-0">
             <div class="card-header">
                 Thêm Mới Nhân Sự
             </div>
@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="col-md-8">
-        <div class="card border-danger border-bottom border-3 border-0">
+        <div class="card border-bottom border-3 border-0">
             <div class="card-header">
                 Danh Sách Nhân Sự
             </div>

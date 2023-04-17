@@ -22,18 +22,11 @@ class AdminSeeder extends Seeder
 
         DB::table('admins')->insert([
             [
-                'email'             => "admin@master.com",
-                'ho_va_ten'         => "Admin",
-                'password'          => bcrypt(123456),
-                'is_block'          => 0,
-            ],
-            [
                 'email'             => "stardarkcinema@gmail.com",
                 'ho_va_ten'         => "Stardark",
-                'password'          => bcrypt(123456),
+                'password'          => bcrypt(12345678),
                 'is_block'          => 0,
             ],
         ]);
-
     }
 }

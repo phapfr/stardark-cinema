@@ -4,7 +4,8 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="shortcut icon" type="/assets_client/image/x-icon" href="https://www.iconeasy.com/icon/png/System/I%20Love/Cinema.png">
+<link rel="shortcut icon" type="/assets_client/image/x-icon"
+    href="https://www.iconeasy.com/icon/png/System/I%20Love/Cinema.png">
 <!-- Place favicon.ico in the root directory -->
 
 <!-- CSS here -->

@@ -23,7 +23,8 @@
                             <div class="contact-form">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <input type="text" v-model="themmoi.ho_va_ten" placeholder="Họ Và Tên *">
+                                        <input type="text" v-model="themmoi.ho_va_ten"
+                                            placeholder="Họ Và Tên *">
                                     </div>
                                     <div class="col-md-12">
                                         <input type="email" v-model="themmoi.email" placeholder="Email *">

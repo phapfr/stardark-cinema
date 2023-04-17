@@ -38,12 +38,12 @@
                                         {{ isset($phim) ? $phim->dien_vien : '' }}</p>
                                 </li>
                                 <li class="release-time">
-                                    <span><i class="far fa-calendar-alt"></i>
-                                        {{ isset($phim) ? Carbon\Carbon::parse($phim->ngay_khoi_chieu)->format('d/m/Y') : '' }},</span>
-                                    <span><i class="far fa-clock"></i> {{ isset($phim) ? $phim->thoi_luong : '' }}
-                                        min</span>
+                                    <span><b>Ngày Khởi Chiếu:
+                                        </b>{{ isset($phim) ? Carbon\Carbon::parse($phim->ngay_khoi_chieu)->format('d/m/Y') : '' }}</span>
                                 </li>
-                            </ul>
+                                <li>
+                                    <span><b>Thời Lượng: </b>{{ isset($phim) ? $phim->thoi_luong : '' }} phút</span>
+                                </li>
                             </ul>
                         </div>
                     </div>

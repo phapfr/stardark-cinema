@@ -499,7 +499,8 @@
                         <div class="col-lg-3">
                             <div class="footer-logo">
                                 <a href="/">
-                                    <img width="80px" src="https://www.iconeasy.com/icon/png/System/I%20Love/Cinema.png"
+                                    <img width="80px"
+                                        src="https://www.iconeasy.com/icon/png/System/I%20Love/Cinema.png"
                                         alt="Logo">
                                     <b
                                         style="display:inline-block; font-size: 25px; color:white; font-family:'Poppins', sans-serif; padding-left:10px">Stardark</b>

@@ -28,65 +28,65 @@ class PhongSeeder extends Seeder
         // 2. Ta sẽ thêm mới phim bằng lệnh create
         DB::table('phongs')->insert([
             [
-                'ten_phong'     =>"DZ FullStack 1",
-                'tinh_trang'    => rand(0,1),
+                'ten_phong'     => "Phòng 1",
+                'tinh_trang'    => rand(0, 1),
                 'hang_doc'      => 13,
                 'hang_ngang'    => 13,
             ],
             [
-                'ten_phong'     =>"DZ FullStack 2",
-                'tinh_trang'    => rand(0,1),
+                'ten_phong'     => "Phòng 2",
+                'tinh_trang'    => rand(0, 1),
                 'hang_doc'      => 13,
                 'hang_ngang'    => 13,
             ],
             [
-                'ten_phong'     =>"DZ FullStack 3",
-                'tinh_trang'    => rand(0,1),
+                'ten_phong'     => "Phòng 3",
+                'tinh_trang'    => rand(0, 1),
                 'hang_doc'      => 13,
                 'hang_ngang'    => 13,
             ],
             [
-                'ten_phong'     =>"DZ FullStack 3",
-                'tinh_trang'    => rand(0,1),
+                'ten_phong'     => "Phòng 3",
+                'tinh_trang'    => rand(0, 1),
                 'hang_doc'      => 13,
                 'hang_ngang'    => 13,
             ],
             [
-                'ten_phong'     =>"DZ FullStack 4",
-                'tinh_trang'    => rand(0,1),
+                'ten_phong'     => "Phòng 4",
+                'tinh_trang'    => rand(0, 1),
                 'hang_doc'      => 13,
                 'hang_ngang'    => 13,
             ],
             [
-                'ten_phong'     =>"DZ FullStack 5",
-                'tinh_trang'    => rand(0,1),
+                'ten_phong'     => "Phòng 5",
+                'tinh_trang'    => rand(0, 1),
                 'hang_doc'      => 13,
                 'hang_ngang'    => 13,
             ],
             [
-                'ten_phong'     =>"DZ FullStack 6",
-                'tinh_trang'    => rand(0,1),
+                'ten_phong'     => "Phòng 6",
+                'tinh_trang'    => rand(0, 1),
                 'hang_doc'      => 13,
                 'hang_ngang'    => 13,
             ],
             [
-                'ten_phong'     =>"DZ FullStack 7",
-                'tinh_trang'    => rand(0,1),
+                'ten_phong'     => "Phòng 7",
+                'tinh_trang'    => rand(0, 1),
                 'hang_doc'      => 13,
                 'hang_ngang'    => 13,
-            ],[
-                'ten_phong'     =>"DZ FullStack 8",
-                'tinh_trang'    => rand(0,1),
+            ], [
+                'ten_phong'     => "Phòng 8",
+                'tinh_trang'    => rand(0, 1),
                 'hang_doc'      => 13,
                 'hang_ngang'    => 13,
-            ],[
-                'ten_phong'     =>"DZ FullStack 9",
-                'tinh_trang'    => rand(0,1),
+            ], [
+                'ten_phong'     => "Phòng 9",
+                'tinh_trang'    => rand(0, 1),
                 'hang_doc'      => 13,
                 'hang_ngang'    => 13,
-            ],[
-                'ten_phong'     =>"DZ FullStack 10",
-                'tinh_trang'    => rand(0,1),
+            ], [
+                'ten_phong'     => "Phòng 10",
+                'tinh_trang'    => rand(0, 1),
                 'hang_doc'      => 13,
                 'hang_ngang'    => 13,
             ],
@@ -94,9 +94,9 @@ class PhongSeeder extends Seeder
 
         $list_phong = Phong::get();
         foreach ($list_phong as $key => $value) {
-            for($dong = 1; $dong <= $value->hang_ngang; $dong++) {
+            for ($dong = 1; $dong <= $value->hang_ngang; $dong++) {
                 $chu = chr($dong + 64);
-                for($cot = 1; $cot <= $value->hang_doc; $cot++) {
+                for ($cot = 1; $cot <= $value->hang_doc; $cot++) {
                     $ten_ghe = $chu . $cot;
                     $ghe = Ghe::create([
                         'ten_ghe'       => $ten_ghe,

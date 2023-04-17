@@ -14,7 +14,7 @@
                     <div class="form-group mt-3">
                         <label>Tình Trạng</label>
                         <select id="tinh_trang" class="form-control">
-                            <option value="1">Còn Kinh Doanh</option>
+                            <option value="1">Đang kinh doanh</option>
                             <option value="0">Dừng Kinh Doanh</option>
                         </select>
                     </div>
@@ -96,7 +96,7 @@
                                         <div class="form-group mt-3">
                                             <label>Tình Trạng</label>
                                             <select id="edit_tinh_trang" class="form-control">
-                                                <option value="1">Còn Kinh Doanh</option>
+                                                <option value="1">Đang kinh doanh</option>
                                                 <option value="0">Dừng Kinh Doanh</option>
                                             </select>
                                         </div>

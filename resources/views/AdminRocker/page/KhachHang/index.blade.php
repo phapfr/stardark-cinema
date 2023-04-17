@@ -2,23 +2,23 @@
 @section('noi_dung')
 <div class="card" id="app">
     <div class="card-header">
-       <h5> Danh Sách Khách Hàng Đã Đăng Ký</h5>
+       <b class="fs-4"> Danh Sách Khách Hàng</b>
     </div>
     <div class="card-body">
         <div class="table-responsive">
         <table class="table table-bordered">
             <thead>
-                <tr>
-                    <th class="text-center text-nowrap">#</th>
-                    <th class="text-center text-nowrap">Họ Và Tên</th>
-                    <th class="text-center text-nowrap">Email</th>
-                    <th class="text-center text-nowrap">Số Điện Thoại</th>
-                    <th class="text-center text-nowrap">Địa Chỉ</th>
-                    <th class="text-center text-nowrap">Ngày Sinh</th>
-                    <th class="text-center text-nowrap">Giới Tính</th>
-                    <th class="text-center text-nowrap">Tình Trạng</th>
-                    <th class="text-center text-nowrap">Kích Hoạt</th>
-                    <th class="text-center text-nowrap">Action</th>
+                <tr class="text-center align-middle bg-primary text-white">
+                    <th>#</th>
+                    <th>Họ Và Tên</th>
+                    <th>Email</th>
+                    <th>Số Điện Thoại</th>
+                    <th>Địa Chỉ</th>
+                    <th>Ngày Sinh</th>
+                    <th>Giới Tính</th>
+                    <th>Tình Trạng</th>
+                    <th>Kích Hoạt</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -156,8 +156,8 @@
         data    :  {
             list                :   [],
             edit                :   {},
-            xoa                 :  {},
-            password_new        : {},
+            xoa                 :   {},
+            password_new        :   {},
         },
         created() {
             this.loadData();
