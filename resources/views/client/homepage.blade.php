@@ -77,7 +77,7 @@
                                 </div>
                                 <div class="navbar-wrap main-menu d-none d-lg-flex">
                                     <ul class="navigation">
-                                        <li class="active menu-item-has-children"><a href="/">Trang Chủ</a>
+                                        <li class="active menu-item-has-children"><a href="/">TRANG CHỦ</a>
                                         </li>
                                         <li class="menu-item-has-children"><a href="/phim-dang-chieu">Phim Đang
                                                 Chiếu</a>
