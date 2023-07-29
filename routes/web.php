@@ -12,9 +12,6 @@ use App\Http\Controllers\PhimController;
 use App\Http\Controllers\PhongController;
 use App\Http\Controllers\QuanLyBaiVietController;
 use App\Http\Controllers\TestController;
-use App\Models\Phong;
-use App\Models\QuanLyBaiViet;
-use App\Models\QuanLyKhachHang;
 use Illuminate\Support\Facades\Route;
 
 

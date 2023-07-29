@@ -498,7 +498,7 @@ class LichChieuSeeder extends Seeder
             ],
             [
                 'id_phong'               =>  '1',
-                'id_phim'                =>  '13',
+                'id_phim'                =>  '2',
                 'thoi_gian_chieu_chinh'  =>  '120',
                 'thoi_gian_quang_cao'    =>  '5',
                 'thoi_gian_bat_dau'      =>  '2023-10-10 00:00:00',
@@ -506,7 +506,7 @@ class LichChieuSeeder extends Seeder
             ],
             [
                 'id_phong'               =>  '1',
-                'id_phim'                =>  '13',
+                'id_phim'                =>  '3',
                 'thoi_gian_chieu_chinh'  =>  '120',
                 'thoi_gian_quang_cao'    =>  '5',
                 'thoi_gian_bat_dau'      =>  '2023-10-10 00:00:00',
