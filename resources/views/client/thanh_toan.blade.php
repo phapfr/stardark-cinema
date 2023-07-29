@@ -50,9 +50,10 @@
                                     <button class="btn-block text-left" type="button" data-toggle="collapse"
                                         data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         <span class="season">Phương Thức Thanh Toán</span>
-                                        <span class="video-count">Chuyển Khoản Qua Ngân Hàng <br> Vietinbank: 56824765745</span>
+                                        <span class="video-count">Chuyển Khoản Qua Ngân Hàng <br> Vietinbank:
+                                            56824765745</span>
                                     </button>
-                                    {{-- <button class="btn-block text-left" type="button" data-toggle="collapse"
+                                    <button class="btn-block text-left" type="button" data-toggle="collapse"
                                         data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         <span class="season">Thời Gian Có Thể Thanh Toán</span>
                                         <span class="video-count">
@@ -60,7 +61,7 @@
                                                 style="background-color: darkgray; color: black">@{{ time }}
                                                 s</a>
                                         </span>
-                                    </button> --}}
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +71,7 @@
         </div>
     </section>
 @endsection
-{{-- @section('js')
+@section('js')
     <script>
         new Vue({
             el: '#app',
@@ -88,4 +89,4 @@
             },
         });
     </script>
-@endsection --}}
+@endsection

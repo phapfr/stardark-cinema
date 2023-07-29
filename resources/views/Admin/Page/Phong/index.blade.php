@@ -1,6 +1,8 @@
 @extends('Admin.share.master')
 @section('noi_dung')
     <div class="row" id="app">
+
+        {{-- Thêm mới phòng --}}
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
@@ -44,7 +46,7 @@
             </div>
         </div>
 
-
+        {{-- Danh sách phòng --}}
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
@@ -198,6 +200,8 @@
                 </div>
             </div>
         </div>
+
+
     </div>
 @endsection
 @section('js')

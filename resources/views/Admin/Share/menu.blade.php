@@ -13,6 +13,10 @@
                 <div class="sb-nav-link-icon"><i class="fa-solid fa-door-closed"></i></div>
                 Quản Lý Phòng
             </a>
+            <a class="nav-link" href="/admin/lich-chieu/index">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                Quản Lý Lịch Chiếu
+            </a>
             <a class="nav-link" href="/admin/khach-hang/thong-tin">
                 <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
                 Quản Lý Khách Hàng

@@ -530,7 +530,7 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="copyright-text">
-                            <p>Copyright &copy; @php echo date('Y') @endphp . All Rights Reserved By <a href="/">Stardark
+                            <p>Copyright &copy; @php echo date('d/M/Y - H/i/s') @endphp . All Rights Reserved By <a href="/">Stardark
                                     Cinema</a></p>
                         </div>
                     </div>

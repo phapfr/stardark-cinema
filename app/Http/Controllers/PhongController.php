@@ -14,12 +14,6 @@ class PhongController extends Controller
         return view('Admin.Page.Phong.index');
     }
 
-    public function test()
-    {
-        return view('Admin.Page.Phong.index');
-    }
-
-
     public function store(Request $request)
     {
         // 1. Ta sẽ thêm mới phòng
@@ -30,9 +24,9 @@ class PhongController extends Controller
             'hang_doc'      => $request->hang_doc,
         ]);
 
-        for($dong = 1; $dong <= $request->hang_ngang; $dong++) {
+        for ($dong = 1; $dong <= $request->hang_ngang; $dong++) {
             $chu = chr($dong + 64);
-            for($cot = 1; $cot <= $request->hang_doc; $cot++) {
+            for ($cot = 1; $cot <= $request->hang_doc; $cot++) {
                 $ten_ghe = $chu . $cot;
                 Ghe::create([
                     'ten_ghe'       => $ten_ghe,
@@ -52,7 +46,7 @@ class PhongController extends Controller
         // dd($request->all());
         $phong = Phong::where('id', $request->id)->first();
 
-        if($phong) {
+        if ($phong) {
             $phong->ten_phong   = $request->ten_phong;
             $phong->tinh_trang  = $request->tinh_trang;
             $phong->hang_ngang  = $request->hang_ngang;
@@ -62,9 +56,9 @@ class PhongController extends Controller
             // Xóa sạch ghế trong phòng
             Ghe::where('id_phong', $request->id)->delete();
             // Tạo mới lại số ghế $request->hang_doc * $request->hang_ngang
-            for($dong = 1; $dong <= $request->hang_ngang; $dong++) {
+            for ($dong = 1; $dong <= $request->hang_ngang; $dong++) {
                 $chu = chr($dong + 64);
-                for($cot = 1; $cot <= $request->hang_doc; $cot++) {
+                for ($cot = 1; $cot <= $request->hang_doc; $cot++) {
                     $ten_ghe = $chu . $cot;
                     Ghe::create([
                         'ten_ghe'       => $ten_ghe,
@@ -93,7 +87,7 @@ class PhongController extends Controller
     {
         $phong = Phong::where('id', $id)->first();
 
-        if($phong) {
+        if ($phong) {
             $phong->tinh_trang = !$phong->tinh_trang;
             $phong->save();
         }
@@ -103,7 +97,7 @@ class PhongController extends Controller
     {
         $phong = Phong::where('id', $id)->first();
 
-        if($phong) {
+        if ($phong) {
             Ghe::where('id_phong', $id)->delete();
             $phong->delete();
         }

@@ -46,12 +46,11 @@ Route::get('/active/{hash}', [CustomerController::class, 'actionActive']);
 
 
 
-//BEGIN Phim
 Route::get('/phim-dang-chieu', [HomepageController::class, 'viewPhimDangChieu']);
 Route::get('/phim-sap-chieu', [HomepageController::class, 'viewPhimSapChieu']);
 
 Route::post('/tim-kiem', [HomepageController::class, 'actionTimKiem']);
-//END Phim
+
 Route::get('/lien-he', [HomepageController::class, 'viewLienHe']);
 Route::post('/send-lien-he', [HomepageController::class, 'sendLienHe']);
 
