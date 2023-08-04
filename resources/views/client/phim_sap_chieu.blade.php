@@ -16,7 +16,8 @@
                     <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two" style="height: 40rem; ">
                         <div class="movie-item movie-item-three mb-50" style=" ">
                             <div class="movie-poster mb-0">
-                                <img style="border-radius: 0" src="{{ $value->avatar }}" alt="">
+                                <img style="border-radius: 0; object-fit: cover; height: 450px;" src="{{ $value->avatar }}"
+                                    alt="">
                                 <ul class="overlay-btn">
                                     <li><a href="{{ $value->trailer }}" style="background: rgba(0,0,0,0.5);"
                                             class="popup-video btn">Xem Trailer</a></li>

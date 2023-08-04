@@ -333,8 +333,10 @@
                                 @if ($value->tinh_trang == 1)
                                     <div class="movie-item movie-item-two mb-30">
                                         <div class="movie-poster">
-                                            <a href="/chi-tiet-phim/{{ $value->slug_ten_phim }}-{{ $value->id }}"><img
-                                                    src="{{ $value->avatar }}" alt=""></a>
+                                            <a href="/chi-tiet-phim/{{ $value->slug_ten_phim }}-{{ $value->id }}">
+                                                <img style="object-fit: cover; height: 280px;"
+                                                    src="{{ $value->avatar }}" alt="">
+                                            </a>
                                         </div>
                                         <div class="movie-content">
                                             <h5 style="color: black;" class="title"><a
@@ -365,8 +367,10 @@
                                 @if ($value->tinh_trang == 2)
                                     <div class="movie-item movie-item-two mb-30">
                                         <div class="movie-poster">
-                                            <a href="/chi-tiet-phim/{{ $value->slug_ten_phim }}-{{ $value->id }}"><img
-                                                    src="{{ $value->avatar }}" alt=""></a>
+                                            <a href="/chi-tiet-phim/{{ $value->slug_ten_phim }}-{{ $value->id }}">
+                                                <img style="object-fit: cover; height: 280px;"
+                                                    src="{{ $value->avatar }}" alt="">
+                                            </a>
                                         </div>
                                         <div class="movie-content">
                                             <h5 style="color: black;" class="title"><a
@@ -445,7 +449,8 @@
                         <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two" style="height: 40rem; ">
                             <div class="movie-item movie-item-three mb-50" style=" ">
                                 <div class="movie-poster mb-0">
-                                    <img style="border-radius: 0" src="{{ $value->avatar }}" alt="">
+                                    <img style="border-radius: 0; object-fit: cover; height: 450px;"
+                                        src="{{ $value->avatar }}" alt="">
                                     <ul class="overlay-btn">
                                         <li><a href="{{ $value->trailer }}" style="background: rgba(0,0,0,0.5);"
                                                 class="popup-video btn">Xem Trailer</a></li>

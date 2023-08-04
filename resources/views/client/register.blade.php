@@ -61,7 +61,7 @@
                                     <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror --}}
                                     <select name="gioi_tinh"
-                                        style="background-color: #1f1e24; color: #bcbcbc; border: 1px solid #1f1e24; padding: 14px 25px; margin-bottom: 30px; width: 100%;">
+                                        style="background-color: silver; color: #000; border: 1px solid gray; padding: 16px 22px; margin-bottom: 30px; width: 100%; border-radius: 4px; font-weight: 500">
                                         <option value="1">Giới Tính Nam</option>
                                         <option value="0">Giới Tính Nữ</option>
                                     </select>
