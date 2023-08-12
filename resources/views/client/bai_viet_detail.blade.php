@@ -66,8 +66,8 @@
                                         <li class="rc-post-item">
                                             <div class="thumb">
                                                 <a href="/bai-viet/detail/{{ $value->id }}"><img
-                                                        style="width: 100px; height: 80px; object-fit: cover" src="{{ $hinh_anh[0] }}"
-                                                        alt=""></a>
+                                                        style="width: 100px; height: 80px; object-fit: cover"
+                                                        src="{{ $hinh_anh[0] }}" alt=""></a>
                                             </div>
                                             <div class="content">
                                                 <h5 class="title"><a

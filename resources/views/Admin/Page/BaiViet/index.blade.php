@@ -2,6 +2,7 @@
 @section('noi_dung')
     <div class="row" id="app">
 
+        {{-- Modal thêm mới  --}}
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-xl">
                 <div class="modal-content">
@@ -115,7 +116,9 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <!-- Modal -->
+
+
+                        <!-- Modal cập nhật-->
                         <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-dialog-scrollable modal-xl">
@@ -133,6 +136,7 @@
                                                 <input type="text" v-model="edit.tieu_de" class="form-control">
                                             </div>
                                             <div class="col-md-6">
+                                                {{-- Tiêu đề và nút chọn ảnh --}}
                                                 <label class="form-label">Hình ảnh</label>
                                                 <div class="input-group">
                                                     <input id="hinh_anh_edit" class="form-control" type="text">
@@ -143,9 +147,12 @@
                                                         </a>
                                                     </span>
                                                 </div>
+
+                                                {{-- Ảnh đã hiện sau khi chọn --}}
                                                 <div id="holder_edit" style="margin-top:15px;max-height:200px;">
                                                     <img style="height:200px;" alt="">
                                                 </div>
+
                                             </div>
                                         </div>
                                         <div class="row">
@@ -168,6 +175,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        {{-- Modal Xóa --}}
                         <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog">
@@ -189,6 +198,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        {{-- Modal mô tả ngắn --}}
                         <div class="modal fade" id="motanganModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-lg">
@@ -208,6 +219,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        {{-- Modal mô tả nội dung --}}
                         <div class="modal fade" id="noidungModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-xl">

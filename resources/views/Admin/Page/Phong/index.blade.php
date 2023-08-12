@@ -123,6 +123,8 @@
                                     </div>
                                 </div>
                             </div>
+
+                            {{-- Modal edit --}}
                             <div class="modal fade" id="editModal" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
@@ -170,6 +172,8 @@
                             </div>
                         </table>
                     </div>
+
+                    {{-- Modal delete --}}
                     <div class="modal fade" id="gheModal" tabindex="-1" role="dialog"
                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen" role="document">
