@@ -16,13 +16,13 @@ class GheBanController extends Controller
         $now = Carbon::now()->subMinutes(2);
         // dd($now);
         GheBan::where('trang_thai', 1)
-              ->where('id_bill_ngan_hang', 0)
-              ->where('updated_at', '<=', $now->toDateTimeString())
-              ->update([
+            ->where('id_bill_ngan_hang', 0)
+            ->where('updated_at', '<=', $now->toDateTimeString())
+            ->update([
                 'trang_thai' => 0,
                 'id_khach_hang' => null,
                 'ma_giao_dich'  => null,
-              ]);
+            ]);
     }
 
     public function doiTrangThaiGheBan(Request $request)
@@ -44,17 +44,17 @@ class GheBanController extends Controller
     public function giuChoDatVe(Request $request)
     {
         $gheBan = GheBan::where('id', $request->id)
-                        ->where('trang_thai', '<>', 1)
-                        ->first();
+            ->where('trang_thai', '<>', 1)
+            ->first();
         if ($gheBan) {
             $gheBan->trang_thai = 2;
             $gheBan->id_khach_hang = Auth::guard('customer')->user()->id;
             $gheBan->save();
 
             GheBan::where('trang_thai', 2)
-                  ->where('id_lich', '<>', $gheBan->id_lich)
-                  ->where('id_khach_hang', Auth::guard('customer')->user()->id)
-                  ->update(['trang_thai' => 0, 'id_khach_hang' => null]);
+                ->where('id_lich', '<>', $gheBan->id_lich)
+                ->where('id_khach_hang', Auth::guard('customer')->user()->id)
+                ->update(['trang_thai' => 0, 'id_khach_hang' => null]);
 
             return response()->json([
                 'status'    => 1,
@@ -69,8 +69,8 @@ class GheBanController extends Controller
     public function huyChoDatVe(Request $request)
     {
         $gheBan = GheBan::where('id', $request->id)
-                        ->where('trang_thai', '<>', 1)
-                        ->first();
+            ->where('trang_thai', '<>', 1)
+            ->first();
         if ($gheBan) {
             $gheBan->trang_thai = 0;
             $gheBan->id_khach_hang = null;
@@ -94,19 +94,19 @@ class GheBanController extends Controller
         // 2.2. Nếu có thì mình tạo ra cái mã giao dịch => hiển thị ra view
         $user = Auth::guard('customer')->user();
         $dsGheBan = GheBan::where('id_khach_hang', $user->id)->where('trang_thai', 2)->get();
-        if(count($dsGheBan) == 0) {
+        if (count($dsGheBan) == 0) {
             toastr()->error('Bạn chưa đặt chỗ nên không thể thanh toán');
             return redirect('/');
         }
         $phim = Phim::join('lich_chieus', 'phims.id', 'lich_chieus.id_phim')
-                    ->join('ghe_bans', 'lich_chieus.id', 'ghe_bans.id_lich')
-                    ->where('lich_chieus.id', $dsGheBan[0]->id_lich)
-                    ->select('phims.*', 'lich_chieus.thoi_gian_bat_dau')
-                    ->first();
+            ->join('ghe_bans', 'lich_chieus.id', 'ghe_bans.id_lich')
+            ->where('lich_chieus.id', $dsGheBan[0]->id_lich)
+            ->select('phims.*', 'lich_chieus.thoi_gian_bat_dau')
+            ->first();
         $maGiaoDich = 'HD' . (78345 + $dsGheBan[0]->id);
         $tongVe = 0;
 
-        foreach($dsGheBan as $key => $value) {
+        foreach ($dsGheBan as $key => $value) {
             $value->trang_thai = 1;
             $value->ma_giao_dich = $maGiaoDich;
             $value->save();
